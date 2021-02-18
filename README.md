@@ -8,3 +8,9 @@ Company A has two key initiatives for 2020:
 As a data analyst, you’ve been brought into Company A to support these goals. You’ve been tasked with two separate items:
 1. Find insights regarding customer preferences to determine the types of movies to produce.
 2. Build out curated user data tables that enable personalization efforts.
+
+
+1	GOALS
+1.	Finding the genre out of 5 genres (Family, Comedy, Crime, Action, and Thriller) has the highest probability of success based on revenue.
+2.	Finding the genre out of 5 genres (Family, Comedy, Crime, Action, and Thriller) recommended the team based on customer engagement.
+3.	Describing the data for marketing that can help to answer marketing teams' questions. 
