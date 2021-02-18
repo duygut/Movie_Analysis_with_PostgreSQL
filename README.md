@@ -1,11 +1,11 @@
 ### Movie_analysis_with_postgresql
 
-You are a data analyst for video streaming company (Company A), a US based Netflix competitor. Rather than charging a monthly fee, Company A charges a low annual fee of $19.99 and allows users to rent movies for a discounted rate compared to other services. Qwikster is focused on growing users in English speaking countries.
+Company A is a US based Netflix competitor. Rather than charging a monthly fee, Company A charges a low annual fee of $19.99 and allows users to rent movies for a discounted rate compared to other services. Company A is focused on growing users in English speaking countries.
 Company A has two key initiatives for 2020:
 1. Produce new Company A exclusive movies to differentiate the platform.
 2. Personalize the Company A experience via Product & Marketing.
 
-As a data analyst, you’ve been brought into Company A to support these goals. You’ve been tasked with two separate items:
+You’ve been brought into Company A to support these goals and you’ve been tasked with two separate items:
 1. Find insights regarding customer preferences to determine the types of movies to produce.
 2. Build out curated user data tables that enable personalization efforts.
 
@@ -19,33 +19,35 @@ As a data analyst, you’ve been brought into Company A to support these goals. 
 ####	DATA DICTIONARY
 The `movies metadata` dataset contains information of each movie such as movie id, genres, title, duration, budget, genres, revenue.
 
-Movies_metadata
-belongs_to_collection	string
- budget	float
- genres	string
- id	float
- original_language	string
- original_title	string
- overview	string
- popularity	float
- poster_path.string	
- production_companies	string
- production_countries	string
- release_date	string
- revenue	float
- runtime	float
- spoken_languages	string
- status	string
- tagline	string
- title	string
+| Movies_metadata              |               |
+|------------------------------|---------------|
+|     belongs_to_collection    |     string    |
+|      budget                  |     float     |
+|      genres                  |     string    |
+|      id                      |     float     |
+|      original_language       |     string    |
+|      original_title          |     string    |
+|      overview                |     string    |
+|      popularity              |     float     |
+|      poster_path             |     string    |
+|      production_companies    |     string    |
+|      production_countries    |     string    |
+|      release_date            |     string    |
+|      revenue                 |     float     |
+|      runtime                 |     float     |
+|      spoken_languages        |     string    |
+|      status                  |     string    |
+|      tagline                 |     string    |
+|      title                   |     string    |
 
 The `movilens_rating` dataset contains information about each user’s vote details.  
 
-Movieles_rating
-Index	float
- movie_id	float
- rating	float
- rating_date	string
- user_id	float
+| Movilens_rating     |               |
+|---------------------|---------------|
+|      Index          |     float     |
+|      movie_id       |     float     |
+|      rating         |     float     |
+|      rating_date    |     string    |
+|      user_id        |     float     |
 
 In `movies_metadata` dataset genres column convert to JSON format (replace single quotes with double quotes) and parse each genre to the columns with Postgres Functions. 
