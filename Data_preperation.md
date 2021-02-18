@@ -8,8 +8,11 @@ This analysis helps to discover valuable information for more than 25000 movies.
 
 The first step was analyzing the whole movie that has a non-zero budget and non-zero revenue. According to the scatterplot, some movies have higher revenue and budget than others that could be an outlier. 
 
-[link to EDA of All Movies!](https://public.tableau.com/profile/dturgut#!/vizhome/EDAofAllMovieswhichhaveNon-zeroBudgetandRevenue/All_Data_EDA)
-![EDA image](All_Data_EDA)
+![EDA image](/images/all_data_EDA.png)
+
+
+![link to EDA of All Movies!](https://public.tableau.com/profile/dturgut#!/vizhome/EDAofAllMovieswhichhaveNon-zeroBudgetandRevenue/All_Data_EDA)
+
 
 The data preparation steps explain below:
 For metadata dataset
