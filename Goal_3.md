@@ -11,17 +11,17 @@ Below questions can be asked to marketing team to understand her needs
 
 Based on this question, the below columns can be put on the data
 Data Table
-1.	User_id 
-2.	Movie_id
-3.	Genre
-4.	Rating
-5.	Subscribe start date
-6.	Subscribe cancel date
-7.	Age
-8.	Sex
-9.	Location
-10.	Login time
-11.	Logout time
+1. User_id 
+2. Movie_id
+3. Genre
+4. Rating
+5. Subscribe start date
+6. Subscribe cancel date
+7. Age
+8. Sex
+9. Location
+10. Login time
+11. Logout time
 12.	Keywords/ hashtags
 13.	Membership type (price group)
 14.	Device id
