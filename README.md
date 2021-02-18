@@ -14,3 +14,38 @@ As a data analyst, you’ve been brought into Company A to support these goals. 
 1.	Finding the genre out of 5 genres (Family, Comedy, Crime, Action, and Thriller) has the highest probability of success based on revenue.
 2.	Finding the genre out of 5 genres (Family, Comedy, Crime, Action, and Thriller) recommended the team based on customer engagement.
 3.	Describing the data for marketing that can help to answer marketing teams' questions. 
+
+
+####	DATA DICTIONARY
+The `movies metadata` dataset contains information of each movie such as movie id, genres, title, duration, budget, genres, revenue.
+
+Movies_metadata
+belongs_to_collection	string
+ budget	float
+ genres	string
+ id	float
+ original_language	string
+ original_title	string
+ overview	string
+ popularity	float
+ poster_path.string	
+ production_companies	string
+ production_countries	string
+ release_date	string
+ revenue	float
+ runtime	float
+ spoken_languages	string
+ status	string
+ tagline	string
+ title	string
+
+The `movilens_rating` dataset contains information about each user’s vote details.  
+
+Movieles_rating
+Index	float
+ movie_id	float
+ rating	float
+ rating_date	string
+ user_id	float
+
+In `movies_metadata` dataset genres column convert to JSON format (replace single quotes with double quotes) and parse each genre to the columns with Postgres Functions. 
